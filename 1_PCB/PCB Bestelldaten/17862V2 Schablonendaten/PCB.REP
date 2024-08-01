@@ -1,0 +1,42 @@
+*************************************************************
+FileName = PCB.GBR
+AutoAperture = True
+*************************************************************
+Generating : NU RTP
+      File : PCB.GM19
+
+    Adding Layer      : NU RTP
+
+
+Used DCodes :
+*************************************************************
+
+*************************************************************
+Generating : NU Top
+      File : PCB.GM10
+
+    Adding Layer      : NU Top
+
+
+Used DCodes :
+*************************************************************
+
+*************************************************************
+Generating : Top Paste
+      File : PCB.GTP
+
+    Adding Layer      : Top Paste
+
+    Adding Layer      : Top Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D10
+    D11
+    D12
+    D13
+    D14
+*************************************************************
+

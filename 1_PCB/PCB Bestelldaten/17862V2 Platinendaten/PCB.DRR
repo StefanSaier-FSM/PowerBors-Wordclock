@@ -1,0 +1,25 @@
+----------------------------------------------------------------------------------------------------------------------------------
+NCDrill File Report For: PCB.PcbDoc   12.06.2024  16:27:54
+----------------------------------------------------------------------------------------------------------------------------------
+
+Layer Pair : Top Layer to Bottom Layer
+ASCII RoundHoles File : PCB-RoundHoles.TXT
+ASCII SlotHoles File : PCB-SlotHoles.TXT
+
+Tool       Hole Size               Hole Tolerance               Hole Type       Hole Count   Plated         Tool Travel
+----------------------------------------------------------------------------------------------------------------------------------
+T1      0.4mm (16mil)                                             Round             260       PTH        3242.58mm (127.66inch)
+T2      0.7mm (28mil)                                             Round             4         PTH        175.11mm (6.89inch)
+T3      0.711mm (28mil)                                           Round             26        PTH        1009.24mm (39.73inch)
+T4      0.8mm (31mil)                                             Round             60        PTH        596.61mm (23.49inch)
+T5      1mm (39mil)                                               Round             62        PTH        663.68mm (26.13inch)
+T6      1.1mm (43mil)                                             Round             4         PTH        43.76mm (1.72inch)
+T7      1.2mm (47mil)                                             Slot              2         PTH        28.53mm (1.12inch)
+T8      1.7mm (67mil)                                             Round             4         PTH        53.80mm (2.12inch)
+T9      2mm (79mil)                                               Round             2         PTH        10.00mm (0.39inch)
+T10     1.3mm (51mil)                                             Round             6         NPTH       39.00mm (1.54inch)
+T11     3.2mm (126mil)                                            Round             4         NPTH       570.00mm (22.44inch)
+----------------------------------------------------------------------------------------------------------------------------------
+Totals                                                                              434
+
+Total Processing Time (hh:mm:ss) : 00:00:01

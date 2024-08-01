@@ -1,0 +1,14 @@
+Project Outputs Generation Report
+---------------------------------
+Start Output Generation At 11:03:58 On 01.08.2024
+
+Output: STEP 3D Data PCB
+Type  : ExportSTEP
+From  : Variant [A Default] of PCB Document [PCB.PcbDoc]
+   Generated File[17862V2 STEP 3D Data PCB.step]
+
+
+Files Generated   : 1
+Documents Printed : 0
+
+Finished Output Generation At 11:04:08 On 01.08.2024
