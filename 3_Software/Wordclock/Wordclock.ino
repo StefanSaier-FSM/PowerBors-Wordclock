@@ -396,14 +396,25 @@ void calculateLEDsForClock(float temperature)
   }
 
   //Stunden Darstellung wird berechnet
-  if(LedStunde > 12 || LedStunde < 1)
+  if(LedStunde > 12)
   {
     LedStunde = 1;
+  }else if(LedStunde < 0)
+  {
+    LedStunde = 0;
   }
+
 
   switch (LedStunde) {
   case 1:
-    addPixelArrayToArray(timeIcon, Icon_1_std);
+    if(minutenIn5MinSteps == 0)
+    {
+      addPixelArrayToArray(timeIcon, Icon_Ein_std);
+    }
+    else
+    {
+      addPixelArrayToArray(timeIcon, Icon_1_std);
+    }
     break;
   case 2:
     addPixelArrayToArray(timeIcon, Icon_2_std);
@@ -710,6 +721,7 @@ void buttonProcessing() {
               {
                 HourAdjustmentSelected = false;
                 MenuPointSelected = false;
+                setTime(jahr, monat, tag, stunde, minute, sekunde); //neu eingestellte Zeit Speichern
               }
               else
               {
@@ -729,7 +741,6 @@ void buttonProcessing() {
 void saveConfiguration()
 {
   EEPROM.begin(1024);
-  setTime(jahr, monat, tag, stunde, minute, sekunde);
   int eeAddress = 0;
   EEPROM.put(eeAddress, u8_manuelBrightnes);
   eeAddress = eeAddress + sizeof(u8_manuelBrightnes);
