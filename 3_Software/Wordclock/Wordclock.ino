@@ -336,9 +336,8 @@ void calculateLEDsForClock(float temperature)
     break;
   case 8:
     //40 min bis 44 min
-    addPixelArrayToArray(timeIcon, Icon_10_min);
-    addPixelArrayToArray(timeIcon, Icon_nach);
-    addPixelArrayToArray(timeIcon, Icon_halb_min);
+    addPixelArrayToArray(timeIcon, Icon_20_min);
+    addPixelArrayToArray(timeIcon, Icon_vor);
     LedStunde = LedStunde + 1;
     break;
   case 9:
@@ -396,14 +395,11 @@ void calculateLEDsForClock(float temperature)
   }
 
   //Stunden Darstellung wird berechnet
-  if(LedStunde > 12)
+  LedStunde = LedStunde % 12;
+  if(LedStunde == 0)
   {
-    LedStunde = 1;
-  }else if(LedStunde < 0)
-  {
-    LedStunde = 0;
+    LedStunde = 12;
   }
-
 
   switch (LedStunde) {
   case 1:
