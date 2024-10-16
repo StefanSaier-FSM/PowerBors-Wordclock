@@ -1,0 +1,1 @@
+Das Label kann mit dem Programm Nicelabel 10 gedruckt werden.
